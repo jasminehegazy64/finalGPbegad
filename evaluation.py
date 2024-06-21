@@ -15,15 +15,15 @@ def read_star_coordinates_from_csv(csv_file_path, prediction_column_index,imagen
             prediction = row[prediction_column_index]  # Read the prediction column
             name=row[imagename_index]
             if prediction == star_label and name==image_name:
-                x = float(row[4])  # Assuming x is in the first column
-                y = float(row[5])  # Assuming y is in the second column
+                x = float(row[2])  # Assuming x is in the first column
+                y = float(row[3])  # Assuming y is in the second column
                 coordinates.append((x, y))
     
     return coordinates
 
 # Example usage
-csv_file_path = r'C:\Users\USER\Desktop\finalGPbegad\sim_debris.csv'  # Replace with your actual path
-prediction_column_index = 10  # Replace with the actual index of the prediction column
+csv_file_path = r'C:\Users\USER\Desktop\finalGPbegad\coordinates.csv'  # Replace with your actual path
+prediction_column_index = 12  # Replace with the actual index of the prediction column
 image_index=0
 coordinates = read_star_coordinates_from_csv(csv_file_path, prediction_column_index,image_index)
 print(coordinates)
