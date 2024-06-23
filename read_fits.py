@@ -35,5 +35,5 @@ def list_columns(fits_file_path):
 
 # Example usage
 if __name__ == "__main__":
-    fits_file_path = r"C:\Users\USER\Desktop\finalGPbegad\axy.fits"  # Replace with your FITS file path
+    fits_file_path = r"C:\Users\USER\Desktop\finalGPbegad\wcs.fits"  # Replace with your FITS file path
     list_columns(fits_file_path)
